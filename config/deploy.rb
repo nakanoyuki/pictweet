@@ -17,7 +17,7 @@ set :rbenv_ruby, '2.5.1' #カリキュラム通りに進めた場合、2.5.1か2
 set :ssh_options, {
     forward_agent: true,
     user: "ec2-user",
-    keys: %w(~/.ssh/key_yuki.pem)  #AWS EC2で作成したキーペア
+    keys: %w(/.ssh/key_yuki.pem)  #AWS EC2で作成したキーペア
 }
 # プロセス番号を記載したファイルの場所
 set :unicorn_pid, -> { "#{shared_path}/tmp/pids/unicorn.pid" }
