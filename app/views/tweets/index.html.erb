@@ -1,3 +1,7 @@
+<%= render 'tweets/header' %>
+
+<% breadcrumb :tweets %>
+
 <div class="contents row" >
 <% @tweets.each do |tweet| %>
     <%= render partial: "tweet", locals: { tweet: tweet } %>
